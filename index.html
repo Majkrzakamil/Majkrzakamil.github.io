@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<link rel="stylesheet" href="src/style.css" type="text/css">
+
+		<script src="src/main.js"></script>
+		<title>Hangman</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-3">
+						<div class="canvas">
+							<div class="gibbet-horizontal"></div>
+							<div class="gibbet-vertical"></div>
+							<div class="head hide">
+								<div class="earring"></div>
+								<div class="head-copy"></div>
+								<div class="hair-left"></div>
+								<div class="hair-right"></div>
+								<div class="beard"></div>
+								<div class="scar">
+									<ul class="scars">
+										<li></li>
+										<li></li>
+										<li></li>
+										<li></li>
+										<li></li>
+									</ul>
+								</div>
+								<div class="eyebrow death"></div>
+								<div class="eyes">
+									<div class="left death">
+										<div class="inner-eye"></div>
+									</div>
+									<div class="right death">
+										<div class="inner-eye"></div>
+									</div>
+									<div class="left-dead death hide">
+										<div class="cross-one"></div>
+										<div class="cross-two"></div>
+									</div>
+									<div class="right-dead death hide">
+										<div class="cross-one"></div>
+										<div class="cross-two"></div>
+									</div>
+								</div>
+								<div class="mouth">
+								</div>
+								<div class="neck hide">
+								</div>
+							</div>
+							<div class="body hide">
+								<div class="arms">
+									<div class="left-arm hide">
+										<div class="left-hand hide"></div>
+									</div>
+									<div class="right-arm hide">
+										<div class="right-hand hide"></div>
+									</div>
+								</div>
+								<div class="legs">
+									<div class="left-leg hide">
+										<div class="left-foot hide"></div>
+									</div>
+									<div class="right-leg hide">
+										<div class="right-foot hide"></div>
+									</div>
+								</div>
+							</div>		
+						</div>
+				</div>
+				<div class="col-9">
+					<span class="missed">You missed:</span>
+					<div id="wrong">
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<div id="word">
+					</div>
+				</div>
+			</div>
+			<div id="modal">
+				<div class="content">
+					<span id="result"></span>
+					<button onclick="gameControl()">New word</button> 
+				</div>
+			</div>
+		</div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
