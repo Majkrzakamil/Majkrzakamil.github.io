@@ -68,6 +68,7 @@ function createPlaceholder() {
 		
 		if(word[i] === '-') {
 			div.innerHTML = '-';
+			score++;
 		} else if(word[i] === ' '){
 			div.innerHTML = '_';
 			score++;

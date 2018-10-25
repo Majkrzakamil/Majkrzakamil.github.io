@@ -450,8 +450,9 @@ body, html {
     color: #ffb900;
     border: 1px dashed #ffb900;
     border-radius: 25px 25px 25px 25px;
-    width: 100px;
-    height: 50px; }
+    width: 130px;
+    height: 50px;
+    text-transform: uppercase; }
 
 @keyframes blink {
   0% {
