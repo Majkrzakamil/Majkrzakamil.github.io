@@ -2,6 +2,7 @@ let selected = [];
 let score = 0;
 let mistakes = 0;
 let isOpen = false;
+let isLost = false;
 let flow = [
 		'head',
 		'neck',
@@ -53,7 +54,10 @@ function restart() {
 	fetchWord();
 	hideHangman();
 	isOpen = false;
-	death();
+	if(isLost){
+		death();
+		!isLost;
+	}
 }
  
 function createPlaceholder() {
@@ -88,6 +92,7 @@ function result() {
 		death();
 		modal.style.display = 'block';
 		isOpen = true;
+		isLost = true;
 		result.innerHTML = 'Game over';
 	} else if(score === word.length) {
 		modal.style.display = 'block';
